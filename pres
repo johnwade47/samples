@@ -1,0 +1,96 @@
+<%@ include file="/files/mscp_sites/www/infosite/154969.1/includes/xigduo/vars.jsp" %>
+<%@ include file="/files/mscp_sites/www/infosite/154969.1/includes/isite-head.jsp" %>
+
+<body id="<%=fileName%>" class="<%=className%> article" data-origin="isite_154969.1-e">
+<%@ include file="/files/mscp_sites/www/infosite/154969.1/includes/mobiletab.jsp" %>
+
+<!-- GLOBAL -->
+<div id="global">
+ <div id="globalscroll"> 
+  
+  <!-- MEDSCAPE HEADER -->
+  <%@ include file="/files/mscp_sites/www/infosite/154969.1/includes/medscapeheader.jsp" %>
+  <!-- /MEDSCAPE HEADER --> 
+  
+  <!-- CONTAINER/CONTENT -->
+  <div id="container">
+   <%@ include file="/files/mscp_sites/www/infosite/154969.1/includes/topnav.jsp" %>
+   <%@ include file="/files/mscp_sites/www/infosite/154969.1/includes/xigduo/header.jsp" %>
+   <div id="content">
+    <%@ include file="/files/mscp_sites/www/infosite/154969.1/includes/xigduo/links.jsp" %>
+    <%if(mobileExist&&mobileDevice){%>
+    <div id="left"> <a href="/infosite/154969.1/e-index"><img src="http://<medscape:domain type="imageServer"/>/pi/sites/infosite/154969.1/xigduo/images/ndx-logo.png" class="img ndx-logo" alt="XIGDUO" /></a> </div>
+    <% } else { %>
+    <div class="col-left"> <a href="/infosite/154969.1/e-index"><img src="http://<medscape:domain type="imageServer"/>/pi/sites/infosite/154969.1/xigduo/images/logo-xigduo.png" class="img logo" alt="XIGDUO" /></a> </div>
+    <% } %>
+    <div class="col-right">
+     <p class="eyebrow">FOR ADULTS WITH TYPE 2 DIABETES, WHEN TREATMENT WITH BOTH DAPAGLIFLOZIN AND METFORMIN IS APPROPRIATE IN ADDITION TO DIET AND EXERCISE</p>
+     <h2><strong class="ygr">START EARLY</strong> WITH XIGDUO XR</h2>
+     
+     <p class="person"><img src="http://<medscape:domain type="imageServer"/>/pi/sites/infosite/154969.1/xigduo/images/person.png" class="img" alt="" /></p>
+     <div class="right">
+      <div class="callout">
+       <h4 class="nosp">Consider XIGDUO XR for patients who:</h4>
+       <ul>
+        <li>Need A1C reduction beyond monotherapy*</li>
+        <li>Could also benefit from weight reduction</li>
+       </ul>
+      </div>
+      <h3>XIGDUO XR combines the benefits of dapagliflozin and metformin XR for:</h3>
+      <p class="a1c">GREATER A1C REDUCTIONS VS MONOTHERAPY<sup><a href="#refs">1</a></sup>*</p>
+      <p class="scale">WEIGHT AND BLOOD PRESSURE REDUCTIONS<sup><a href="#refs">1</a></sup></p>
+      <div class="calendar">
+      <p class="nosp">CONVENIENT ONCE-DAILY DOSING<sup><a href="#refs">1</a></sup></p>
+      <ul class="ulmod">
+       <li>The first and only once-daily SGLT2i<sup>&dagger;</sup> + metformin combination therapy</li>
+       <li>Taken once daily with morning meal</li>
+       <li>Gradually titrate dose to reduce GI side effects associated with metformin</li>
+      </ul>
+      </div>
+     </div>
+     <p class="clear blue"><strong>XIGDUO XR is not indicated for weight loss or the treatment of hypertension.</strong></p>
+     <div class="footnote-box">
+       <p class="hanging">*Metformin XR or dapagliflozin.</p>
+       <p class="hanging"><sup>&dagger;</sup>SGLT2i = sodium-glucose cotransporter 2 inhibitor.</p>
+     </div>
+     <h4 class="blue">Contraindications</h4>
+     <ul>
+      <li>Moderate to severe renal impairment (e.g., serum creatinine levels &ge;1.5 mg/dL for men, &ge;1.4 mg/dL for women, or eGFR &lt;60 mL/min/1.73 m<sup>2</sup> or CrCl &lt;60 mL/min), which may also result from conditions such as cardiovascular collapse (shock), acute myocardial infarction, and septicemia</li>
+      <li>History of a serious hypersensitivity reaction to dapagliflozin or hypersensitivity to metformin hydrochloride</li>
+      <li>Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma</li>
+     </ul>
+     <div id="nextArt" class="callout-sm">
+      <p>NEXT ARTICLE:<br>
+       <a href="/infosite/154969.1/e-article-2">MOA</a></p>
+     </div>
+    </div>
+    <div id="nav-brand">
+     <%@ include file="/files/mscp_sites/www/infosite/154969.1/includes/xigduo/sidebar.jsp" %>
+    </div>
+    <div class="col-right">
+     <%@ include file="/files/mscp_sites/www/infosite/154969.1/includes/xigduo/side_isi.jsp" %>
+     <div class="clear" id="refs"> <strong>Reference</strong>
+      <ol>
+       <li>XIGDUO XR [package insert]. Wilmington, DE: AstraZeneca; 2014.</li>
+      </ol>
+     </div>
+    </div>
+    <!-- Side ISI -->
+    <%@ include file="/files/mscp_sites/www/infosite/154969.1/includes/xigduo/brand.jsp" %>
+   </div>
+  </div>
+  <!-- /CONTAINER/CONTENT --> 
+  
+  <!-- MEDSCAPE FOOTER -->
+  <%@ include file="/files/mscp_sites/www/infosite/medscape/medscapefooter.jsp" %>
+  <%@ include file="/files/mscp_sites/www/infosite/154969.1/includes/xigduo/unbranded.jsp" %>
+  
+  <!-- /MEDSCAPE FOOTER --> 
+  
+ </div>
+ <!-- /GLOBALSCROLL --> 
+</div>
+<!-- /GLOBAL -->
+<%@ include file="/files/common/footer/footer-blank.jsp" %>
+</body>
+</html>
