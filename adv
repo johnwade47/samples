@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="no-js"> <!--<![endif]--><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Information from Industry</title>
+  <%@ page isELIgnored="false" %>
+  <%@ taglib uri="/WEB-INF/tld/prof-customtags.tld" prefix="medscape" %>
+  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+  <%@ include file="/files/common/useragent/list.jsp" %>
+
+  <c:set var="seriesId" value="2013" />
+  <c:set var="activityId" value="18942" />
+  <c:set var="tacticId" value="" />
+  <c:set var="sfNum" value="177974.2" />
+  
+  <c:set var="cssVerDesk" value="ba13.css" />
+  <c:set var="cssVerMobile" value="m-ba13.css" />
+  <c:set var="coreLib" value="corelib13" />
+  <c:set var="subTitle" value="Information From Industry" />
+
+<c:set var="globalCssInclude" value="/files/common/header/promo/slideshow/global-css13.jsp" />
+<c:set var="globalJsInclude" value="/files/common/header/promo/slideshow/global-js13.jsp" />
+
+  <%@ taglib uri="/WEB-INF/tld/ipp.tld" prefix="ipp" %>
+  <meta data-cp='{"tacticId":"<c:out value="${tacticId}" />", "activityId": "<c:out value="${activityId}" />", "parId":"<ipp:sessionVar key='par_id' />"}' />
+  
+<meta data-ipp='{"tacticId":"<c:out value="${tacticId}" />", "activityId": "<c:out value="${activityId}" />", "parId":"<ipp:sessionVar key='par_id' />", "parIdE":"<ipp:sessionVar key='par_id' encrypt='true' encode='true'/>", "wpUrl": "<medscape:domain type="wpServer" />", "sfNum": "<c:out value="${sfNum}" />"}' />
+
+  <meta name="metaref" content="<%=request.getHeader("referer")%>">
+
+  <%@ include file="/files/common/header/promo/slideshow/global-css13.jsp" %>
+
+  <medscape:excludeif userAgent='<%=li1 + ",ipad"%>'>
+    <link rel="stylesheet" href="http://<medscape:domain type="imageServer"/>/pi/sp/ipp/<c:out value="${seriesId}" />/<c:out value="${activityId}" />/css/instance.css" />
+    <link rel="stylesheet" href="http://<medscape:domain type="imageServer"/>/medcss/features/slideshow/ba-video.css" /> <!-- video in brandAdvance specific css -->	
+  </medscape:excludeif>
+
+  <medscape:includeif userAgent='<%=li1 + ",ipad"%>'>
+    <link rel="stylesheet" href="http://<medscape:domain type="imageServer"/>/pi/sp/ipp/<c:out value="${seriesId}" />/<c:out value="${activityId}" />/css/m-instance.css" />
+    <link rel="stylesheet" href="http://<medscape:domain type="imageServer"/>/medcss/features/slideshow/m-ba-video.css" /> <!-- video in brandAdvance specific css -->		
+  </medscape:includeif>
+
+  <%@ include file="/files/common/header/promo/slideshow/global-js13.jsp" %>
+  
+	<!-- Portrait Blocker CSS -->
+    <link rel="stylesheet" href="http://<medscape:domain type="imageServer"/>/pi/sp/ipp/<c:out value="${seriesId}" />/<c:out value="${activityId}" />/css/d-instance.css">
+    
+<!-- Replace the portrait blocker with one of the css files below:
+
+d-instance.css: Uses the default message for all devices in portrait mode.
+
+merck-instance.css: Adds a custom image to mobile devices and uses the default message for tablet.
+
+p-instance.css: Adds a custom image to mobile device and lets the slideshow function in both landscape and portrait for tablet.
+
+-->
+  
+</head>
+<body>
+
+<!-- MAIN CONTENT -->
+<div id="pageWrapper" class="">
+
+	<div id="sponsorLine">
+		<div id="returnToMedscape"><a target="_blank" href="http://www.medscape.com">&laquo; Return to Medscape</a></div>
+		<div class="ba_disclaimer">Developed under the direction and sponsorship of <strong>Procter & Gamble</strong>.</div>
+		<br style="clear:both;">
+	</div>
+    
+	<div id="app-main" class="hideapp">
+		<div id="loadingScreen">
+			<p><img id="preloader" width="50" height="50" src="http://<medscape:domain type="imageServer"/>/pi/features/promo-slideshow/v1/preloader1.gif" alt="" /></p>
+			<p>Loading...</p>
+		</div>
+    
+	<!-- PORTRAIT BLOCKER -->
+    <div id="m-portraitScreen">
+        <span id="image">
+            <span id="image-inner">
+            </span>
+        </span>
+    </div>
+		
+		<div class="modal_bg">
+			<div class="restart_resume">
+				<%@ include file="resume.jsp" %>
+			</div>
+		</div><!--//restart-resume-->
+        
+	</div><!-- hideapp -->	 
+	
+	<!--MOBILE MENU-->
+	<div id="mobileMenuDropdown" class="">
+		<ul id="mobileMenu">
+			<%@ include file="menu.jsp" %>
+		</ul>
+	</div>
+	<!--//MOBILE MENU-->
+	
+	<div class="presentation_layer">
+		<div class='prev' data-bind="click:slide_prev,css:{disable:disable_prev()}"><span></span></div>
+		<div class='next' data-bind="click:slide_next,css:{disable:disable_next()}"><span></span></div>
+		<div class='topnav'>
+			<div id="resources_menu"> <span class="mobileCloseProgramBTN" data-bind="click:referrerUrl">Close</span> <span class="mobileMenuIcon hideOnDesktop" data-bind="className:'isopened',toggletarget:mobileMenuDropdown"></span>
+				<div>
+					<ul id="slideNotesMenu">
+                    
+						<!--PLACE YOUR SLIDENOTE ALERTS HERE-->
+                        <li class="slideNotes_1 slideSubContent" data-bind="className:'isopened',toggletarget:slideNotes_1"><span></span></li>
+                        <li class="slideNotes_3 slideSubContent" data-bind="className:'isopened',toggletarget:slideNotes_3"><span></span></li>
+						<li class="slideNotes_4 slideSubContent" data-bind="className:'isopened',toggletarget:slideNotes_4"><span></span></li>
+						<li class="slideNotes_5 slideSubContent" data-bind="className:'isopened',toggletarget:slideNotes_5"><span></span></li>
+						<li class="slideNotes_6 slideSubContent" data-bind="className:'isopened',toggletarget:slideNotes_6"><span></span></li>
+						<!--//PLACE YOUR SLIDENOTE ALERTS HERE-->
+                        
+					</ul>
+					<ul id="desktopMenuDropdown">
+						<li><span></span>
+							<ul>
+								<%@ include file="menu.jsp" %>
+							</ul>
+						</li>
+					</ul>
+				</div><!--//mobileMenuDropdown--> 
+			</div><!--//resources_menu-->
+			
+			<div class="nav">
+				<div>
+					<table>
+						<tr>
+							<td class="prev_slide" data-bind="click:slide_prev,css:{disable:disable_prev()}"><span></span></td>
+							<td data-bind="text:slide_currentIndex_display">0</td>
+							<td class="of">of</td>
+							<td data-bind="text:slide_totalCount">00</td>
+							<td class="next_slide" data-bind="click:slide_next,css:{disable:disable_next()}"><span></span></td>
+						</tr>
+					</table>
+				</div>
+			</div><!--//nav--> 
+		</div><!--//topnav--> 
+		
+		<!--ENLARGED/POPPED CONTENT FRAME-->
+		<div id='popFrame' class='popper hidethis'>
+			<div class='popper_Close de-magnify'><span>Close</span></div>
+			<div class='popper_Content'></div>
+		</div>
+		<!--//ENLARGED/POPPED CONTENT FRAME-->
+
+
+      <!--REFERENCES-->
+      <div id='refs_Overlay' class='overlay'>
+        <div class="popupPadd">
+          <div class='popUpContent'>
+            <a class='xBTN' data-bind="className:'isopened',toggletarget:refs_Overlay"></a>
+            <h3>Full Reference List</h3>
+            <div class="popScroll">
+                <%@ include file="refs_Overlay.jsp" %>
+            </div><!--//popScroll-->
+          </div><!--//popUpContent-->
+        </div><!--//popupPadd-->  
+      </div>
+      <!--//REFERENCES-->
+  
+        <!--slideNotes_1-->
+		<div id="slideNotes_1" class="overlay">
+			<%@ include file="notes-1.jsp" %>		 
+		</div>
+		<!--//slideNotes_1-->
+ 
+        <!--slideNotes_3-->
+		<div id="slideNotes_3" class="overlay">
+			<%@ include file="notes-3.jsp" %>		 
+		</div>
+		<!--//slideNotes_3-->   
+        
+        <!--slideNotes_4-->
+		<div id="slideNotes_4" class="overlay">
+			<%@ include file="notes-4.jsp" %> 
+		</div>
+		<!--//slideNotes_4--> 
+        
+        <!--slideNotes_5-->
+		<div id="slideNotes_5" class="overlay">
+			<%@ include file="notes-5.jsp" %> 
+		</div>
+		<!--//slideNotes_5--> 
+        
+        <!--slideNotes_6-->
+		<div id="slideNotes_6" class="overlay">
+			<%@ include file="notes-6.jsp" %> 
+		</div>
+		<!--//slideNotes_6-->
+		
+		<!--BEGIN MAIN CONTENT {SLIDES}-->
+		<div id="slidebox" class="">
+        
+			<div class="slide_scene">
+				<div class="panel_TL_100">
+                    <div class="panel_BR_50">
+                        <div class="slideNoteAlert">
+                            <div class="slideNoteAlertInner">
+                                <p>Tap here to display references.</p>
+                            </div>
+                        </div>
+                        <%@ include file="slide-1.jsp" %>
+                    </div><!--//panel_BR_50-->
+                </div><!--//panel_TL_100--> 
+			</div>
+			<!-- scene1 -->
+			
+			<div class="slide_scene">
+				<div class="panel_TL_100">
+                    <div class="panel_BR_50">
+                        <%@ include file="slide-2.jsp" %>
+                    </div><!--//panel_BR_50-->
+                </div><!--//panel_TL_100--> 
+			</div>
+			<!-- scene2 -->
+			
+			<div class="slide_scene">
+				<div class="panel_TL_100">
+                    <div class="panel_BR_50">
+                        <div class="slideNoteAlert">
+                            <div class="slideNoteAlertInner">
+                                <p>Tap here to display references.</p>
+                            </div>
+                        </div>
+                        <%@ include file="slide-3.jsp" %>
+                    </div><!--//panel_BR_50-->
+                </div><!--//panel_TL_100-->
+			</div>
+			<!-- scene3 -->
+			
+			<div class="slide_scene">
+				<div class="panel_TL_100">
+                    <div class="panel_BR_50">
+                        <div class="slideNoteAlert">
+                            <div class="slideNoteAlertInner">
+                                <p>Tap here to display references.</p>
+                            </div>
+                        </div>
+                        <%@ include file="slide-4.jsp" %>
+                    </div><!--//panel_BR_50-->
+                </div><!--//panel_TL_100--> 
+			</div>
+			<!-- scene4 -->
+			
+			<div class="slide_scene">
+				<div class="panel_TL_100">
+				<div class="panel_BR_50">
+                        <div class="slideNoteAlert">
+                            <div class="slideNoteAlertInner">
+                                <p>Tap here to display references.</p>
+                            </div>
+                        </div>
+					<%@ include file="slide-5.jsp" %>
+				</div><!--//panel_BR_50-->
+                </div><!--//panel_TL_100-->
+			</div>
+			<!-- scene5 -->
+			
+			<div class="slide_scene">
+				<div class="panel_TL_100">
+                    <div class="panel_BR_50">
+                        <div class="slideNoteAlert">
+                            <div class="slideNoteAlertInner">
+                                <p>Tap here to display references.</p>
+                            </div>
+                        </div>
+                        <%@ include file="slide-6.jsp" %>
+                    </div><!--//panel_BR_50-->
+                </div><!--//panel_TL_100--> 
+			</div>
+			<!-- scene6 -->
+            
+			<div class="slide_scene">
+				<div class="panel_TL_100">
+                    <div class="panel_BR_50">
+                        <%@ include file="slide-7.jsp" %>
+                    </div><!--//panel_BR_50-->
+                </div><!--//panel_TL_100--> 
+			</div>
+			<!-- scene7 Closing Scene -->
+            
+		</div><!--//SLIDEBOX-->
+		
+		<div id="toastAlert"> <span class="toastArrow swipeLeft"></span> <span>Swipe to advance</span> <span class="toastArrow swipeRight"></span> </div>
+	</div>
+	<!--//PRESENTATION LAYER--> 
+	
+</div><!--//APP-MAIN-->
+</div><!--//pageWrapper--> 
+
+<script src="http://<medscape:domain type="imageServer"/>/pi/sp/ipp/<c:out value="${seriesId}" />/<c:out value="${activityId}" />/js/slideshow_instance.js"></script>
+<%@ include file="/files/common/footer/footer-blank-promo.jsp" %>
+
+</body>
+</html>
